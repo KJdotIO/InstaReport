@@ -15,6 +15,16 @@ def get_options():
     parser.add_argument("-f", "--file", type=str, default="acc.txt", help="Accounts list (Defaults to acc.txt in program directory).")
     return parser.parse_args()
 
+def close_cookie_popup(driver):
+    try:
+        allow_cookies_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[text()='Allow all cookies']"))
+        )
+        allow_cookies_button.click()
+        print("Cookie popup closed.")
+    except (NoSuchElementException, TimeoutException):
+        print("No cookie popup found or it already closed.")
+
 def main():
     args = get_options()
     username = args.username
