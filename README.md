@@ -54,7 +54,7 @@ Works On:
 7. `chmod +x *`
 8. Create a file `acc.txt` and run `python main.py` or `python main.py -u <TARGET_USERNAME> -f acc.txt`
 
-Where `acc.txt` is populated with one or more premade accounts that will bot for you.
+Where `acc.txt` is populated with one or more premade accounts that will bot for you. The format is username:password, separated by a new line.
 ## Disclaimer:
 #### This tool is intended for educational and research purposes only. Misuse of this tool for unauthorized access to computer systems or networks is strictly prohibited and may result in legal consequences. The author of this tool takes no responsibility for any damage or harm caused by its usage. It is the user's responsibility to ensure compliance with all applicable laws and regulations while using this tool. By downloading, installing, or using this tool, you agree to use it responsibly and lawfully.
 
